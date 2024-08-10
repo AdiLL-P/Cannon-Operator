@@ -1,34 +1,26 @@
-# Cannon-ball Distance Calculator
+# Cannon Distance Calculator
 ## Overview
-**This repository contains a physics-based program designed to calculate the distance traveled by a cannonball under three different scenarios. The program uses principles of projectile motion to determine the distance based on the initial speed of the cannonball, the angle of the cannon, and the height differences between the cannon and the target.**
+**This program calculates the distance traveled by a cannonball in three different scenarios based on user inputs. It utilizes physics principles and trigonometry to determine how far the cannonball will travel, given its speed, angle, and height. This is a useful tool for understanding projectile motion in various contexts.**
 
-## Scenarios
-### Scenario 1: Horizontal Cannon
-- Calculate the Time in the Air 
-- Given the height of the cannon above the water line, compute the time the cannonball is in the air using the formula for free-fall motion.
-- Calculate the Distance Traveled
-- Use the speed of the cannonball and the time it is in the air to determine the horizontal distance traveled.
-### Scenario 2: Angled Cannon at the Same Level
-- Convert Speed into Vertical and Horizontal Components
-- Decompose the speed of the cannonball into vertical and horizontal components using the angle of the cannon and basic trigonometry.
-- Calculate Time in the Air
-- Determine the total time the cannonball is in the air based on its vertical speed.
-- Find Time to Reach Peak
-- Compute the time it takes for the cannonball to reach its peak height (half of the total time in the air).
-- Calculate Distance Traveled
-- Use the horizontal speed of the cannonball and the total time in the air to find the distance traveled.
-### Scenario 3: Angled Cannon at a Lower Level, Far Away
-- Convert Speed into Vertical and Horizontal Components
-- Decompose the speed of the cannonball into vertical and horizontal components using the cannon angle.
-- Calculate Time in the Air
-- Determine the total time the cannonball is in the air based on its vertical speed.
-- Find Time to Reach Peak
-- Calculate the time to reach the peak height of the cannonball’s trajectory.
-- Calculate Maximum Height
-- Compute the maximum height reached by the cannonball using vertical speed and gravity.
-- Determine Total Height
-- Calculate the total height from the peak to the height of the cannon above the enemy ship.
-- Calculate Time to Fall to the Enemy Ship
-- Compute the time required for the cannonball to fall from its peak to the enemy ship.
-- Calculate Distance Traveled
-- Determine the distance traveled by using the horizontal speed and the total time in the air.
+## 🚀 Features
+- **Scenario 1:** Horizontal Cannon: Calculate the distance traveled by a cannonball fired horizontally from a given height.
+- **Scenario 2:** Angled Cannon at the Same Level: Calculate the distance traveled by a cannonball fired at an angle when the cannon and target are at the same height.
+- **Scenario 3:** Angled Cannon at a Lower Level: Calculate the distance traveled by a cannonball fired at an angle when the cannon is at a height above the target.
+## 🛠️ How to Use
+- **Run the Program:** Start the script to begin the calculations.
+- **Choose a Scenario:** Select one of the three scenarios.
+- **Enter Parameters:**
+  - For **Scenario 1**, provide the speed of the cannonball and the height of the cannon.
+  - For **Scenario 2**, provide the speed of the cannonball and the angle at which it is fired.
+  - For **Scenario 3**, provide the speed of the cannonball, the height of the cannon, and the angle at which it is fired.
+- **View Results:** The program will calculate and display the distance the cannonball will travel based on the chosen scenario.
+- **Retry or Exit:** Choose to perform another calculation or exit the program.
+## 📜 Code Breakdown
+**cannon Class**
+- **Constructor (__init__):** Initializes the cannonball parameters (speed, angle, height) and the scenario choice.
+
+- **Method (shooter):** Performs the calculation based on the selected scenario:
+
+    - **Scenario 1:** Calculates the distance using horizontal motion equations.
+    - **Scenario 2:** Uses projectile motion equations to calculate the distance.
+    - **Scenario 3:** Accounts for an initial height and calculates the distance using projectile motion equations.
