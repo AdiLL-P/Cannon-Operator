@@ -21,12 +21,11 @@ class cannon:
             print(f"Distance cannon ball will travel is {distance}")    
         elif self.choice == 3:
             angle_rad = math.radians(self.angle)
-            g = 9.81
             horizontal = self.speed * math.cos(angle_rad)
             vertical = self.speed * math.sin(angle_rad)
-            discriminant = vertical**2 + 2 * g * self.height
+            discriminant = vertical**2 + 2 * gravity * self.height
             sqrt_discriminant = math.sqrt(discriminant)
-            time_of_flight = (vertical + sqrt_discriminant) / g
+            time_of_flight = (vertical + sqrt_discriminant) / gravity
             distance = horizontal * time_of_flight
             print(f"Distance cannon ball will travel is {distance}")
         else:
